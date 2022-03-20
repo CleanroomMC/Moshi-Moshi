@@ -1,4 +1,4 @@
-# MoshiMoshi
+# Moshi-Moshi
 
 ***Light and primitive StackWalker-esque API for Java 8 or below.***
 
