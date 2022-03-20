@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'com.cleanroommc'
+version '1.0'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    // select the repositories you want to publish to
+    repositories {
+        maven {
+            url cleanroom_maven
+            credentials {
+                username cleanroom_user
+                password cleanroom_pass
+            }
+        }
+    }
+}
